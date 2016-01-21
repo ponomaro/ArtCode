@@ -15,45 +15,47 @@ import java.math.BigInteger;
  * - метод который сравнивает два числа
  */
 public class MyNumber {
-    private int number;
+    private final int number;
 
     public MyNumber(int number) {
         this.number = number;
     }
 
-    public void sum(MyNumber anotherNumber) {
-        this.number += anotherNumber.getNumber();
+    public MyNumber sum(MyNumber anotherNumber) {
+        return new MyNumber(this.number + anotherNumber.getNumber());
 
     }
 
-    public void deduct(MyNumber anotherNumber) {
-        this.number -= anotherNumber.getNumber();
+    public MyNumber deduct(MyNumber anotherNumber) {
+
+        return new MyNumber(this.number - anotherNumber.getNumber());
     }
 
-    public void multipy(MyNumber anotherNumber) {
-        this.number *= anotherNumber.getNumber();
+    public MyNumber multipy(MyNumber anotherNumber) {
+        return new MyNumber(this.number * anotherNumber.getNumber());
     }
 
-    public void devid(MyNumber anotherNumber) {
+    public MyNumber devid(MyNumber anotherNumber) {
         if (this.number / anotherNumber.getNumber() == 0) {
             System.out.println("arifmetical exeption /0");
         } else {
-            this.number = this.number / anotherNumber.getNumber();
+          return new MyNumber(this.number / anotherNumber.getNumber());
         }
-
+        return null;
     }
 
-    public void pow(MyNumber anotherNumber) {
+    public MyNumber pow(MyNumber anotherNumber) {
         int temp = anotherNumber.getNumber();
+        int result=this.number;
         int mult = this.number;
         if (temp < 2) {
             System.out.println("Unable to calculate");
         } else {
             for (int i = 0; i < temp - 1; i++) {
-                this.number *= mult;
+                result *= mult;
             }
         }
-
+        return new MyNumber(result);
     }
 
     public BigInteger factorial() {
@@ -71,13 +73,13 @@ public class MyNumber {
         return factorial;
     }
 
-    public void remainedOfDevision(MyNumber anotherNumber) {
+    public MyNumber remainedOfDevision(MyNumber anotherNumber) {
         if (this.number / anotherNumber.getNumber() == 0) {
             System.out.println("Arifmatical exception /0");
         } else {
-            this.number = this.number % anotherNumber.getNumber();
+            return new MyNumber(this.number % anotherNumber.getNumber());
         }
-
+        return null;
     }
 
     public int compare(MyNumber anotherNumber) {
@@ -88,4 +90,5 @@ public class MyNumber {
     public int getNumber() {
         return number;
     }
+
 }
