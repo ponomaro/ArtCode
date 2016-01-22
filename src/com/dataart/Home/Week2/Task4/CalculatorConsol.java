@@ -13,7 +13,7 @@ import java.util.Scanner;
  * - деление двух чисел
  */
 public class CalculatorConsol {
-    public static void main(String[] args) {
+    public static void Calculator() {
 
         Scanner read = new Scanner(System.in);
         int operation, a, b, result = 0;
