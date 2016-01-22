@@ -114,6 +114,11 @@ public class MyString {
     public int compare(MyString anotherString) {
         int myLength = myStringArray.length;
         int anotherLength = anotherString.myStringArray.length;
+        int min = myLength < anotherLength ? myLength : anotherLength;
+        for (int i = 0; i < min; i++) {
+            if (myStringArray[i] > anotherString.myStringArray[i]) return 1;
+            if (myStringArray[i] < anotherString.myStringArray[i]) return -1;
+        }
         return myLength > anotherLength ? 1 : myLength == anotherLength ? 0 : -1;
     }
 }

@@ -39,7 +39,12 @@ public class TestMyString {
         MyString test6 = new MyString("TestRunsAsExpected");
         MyString test7 = new MyString("uns");
 
-        System.out.println("check substring: " + (test6.indexSubstring(test7) == 5));
+        System.out.println("check substringindex: " + (test6.indexSubstring(test7) == 5));
+
+        MyString test8 = new MyString("hello");
+        MyString test9 = new MyString("hellq");
+
+        System.out.println("check compare: " + (test8.compare(test9) == -1));
 
     }
 }
