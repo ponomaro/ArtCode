@@ -40,6 +40,13 @@ public class TestGroup {
 
         group.deleteLastStudent();
         System.out.println((group.getSize() == 1) + " deleteLast");
+        group.addStudent(student1);
+        group.addStudent(student2);
+
+        //System.out.println(student2.getIdNum());
+        group.deleteStudentById("1");
+        System.out.println(group.getSize());
+        System.out.println(student1);
     }
 
     /*private static void testAddStudent(){

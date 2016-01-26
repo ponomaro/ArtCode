@@ -12,6 +12,8 @@ public class Student {
     private Address address;
     private Contact contact;
 
+    private Study study;
+
 
     public Student(String name, int rank) {
         this.idNum = String.valueOf(idCounter);
@@ -87,5 +89,17 @@ public class Student {
 
     public void setContact(Contact contact) {
         this.contact = contact;
+    }
+
+    public String toString () {
+        return "id: "+idNum+" "+ name+" "+birthday+" "+contact;
+    }
+
+    public Study getStudy() {
+        return study;
+    }
+
+    public void setStudy(Study study) {
+        this.study = study;
     }
 }

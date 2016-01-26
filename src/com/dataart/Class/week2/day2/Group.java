@@ -20,7 +20,25 @@ public class Group {
 
     public Student deleteLastStudent() {
         freePlace--;
+        Student toreturn=students[freePlace];
         students[freePlace] = null;
+        return toreturn;
+    }
+
+    public Student deleteStudentById(String id) {
+
+        for (int i = 0; i <freePlace ; i++) {
+            if(students[i].getIdNum().equals(id)) {
+                Student toreturn=students[i];
+                for (; i <freePlace-1 ; i++) {
+                    students[i]=students[i+1];
+                }
+                students[freePlace] = null;
+                freePlace--;
+                return toreturn;
+            }
+        }
+
         return null;
     }
 

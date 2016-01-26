@@ -48,4 +48,8 @@ public class Address {
     public void setHouseNum(int houseNum) {
         this.houseNum = houseNum;
     }
+
+    public String toString() {
+        return "Address " +country+", "+city+", "+street+" "+houseNum;
+    }
 }
