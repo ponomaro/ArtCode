@@ -4,9 +4,9 @@ package com.dataart.home.week3.task4;
  * Created by Home on 26.01.2016.
  */
 public class Parking {
-    Motorcycle[] garage;
-    String Adress;
-    boolean isOpen = true;
+    private Motorcycle[] garage;
+    private String Adress;
+    private boolean isOpen = true;
 
     public Parking(int garage, String adress, boolean isOpen) {
         this.garage = new Motorcycle[garage];
@@ -15,25 +15,25 @@ public class Parking {
     }
 
     public int addMotoOnLastFreePlace(Motorcycle moto) {
-        if(!isOpen){
+        if (!isOpen) {
             System.err.println("Parking is closed");
             return -1;
         }
         if (availablePlaces() > 0) {
-            int idLastOcupied=-1;
+            int idLastOcupied = -1;
             for (int i = garage.length - 1; i >= 0; i--) {
                 if (garage[i] == null) {
-                    idLastOcupied=i;
+                    idLastOcupied = i;
                     break;
                 }
             }
-            if (idLastOcupied!=-1)garage[idLastOcupied]=moto;
+            if (idLastOcupied != -1) garage[idLastOcupied] = moto;
             return idLastOcupied;
         } else return -1;
     }
 
     public Motorcycle takeLastMoto() {
-        if(!isOpen){
+        if (!isOpen) {
             System.err.println("Parking is closed");
             return null;
         }
@@ -47,7 +47,7 @@ public class Parking {
     }
 
     public int addMotoByPlaceNumber(Motorcycle moto, int place) {
-        if(!isOpen){
+        if (!isOpen) {
             System.err.println("Parking is closed");
             return -1;
         }
@@ -59,7 +59,7 @@ public class Parking {
     }
 
     public Motorcycle takeMotoByPlaceNumber(int placeNumber) {
-        if(!isOpen){
+        if (!isOpen) {
             System.err.println("Parking is closed");
             return null;
         }
@@ -69,7 +69,7 @@ public class Parking {
     }
 
     public void clearGaragePlaces() {
-        if(!isOpen){
+        if (!isOpen) {
             System.err.println("Can not remove bikes from closed parking");
             return;
         }
@@ -84,23 +84,23 @@ public class Parking {
     }
 
     public int open() {
-        if (isOpen==false){
-            isOpen=true;
+        if (isOpen == false) {
+            isOpen = true;
             return 1;
-        }
-        else {
+        } else {
             System.err.println("Parking already opened");
-        return -1;}
+            return -1;
+        }
     }
 
     public int close() {
-        if (isOpen==true){
-            isOpen=false;
+        if (isOpen == true) {
+            isOpen = false;
             return 1;
-        }
-        else {
+        } else {
             System.err.println("Parking already closed");
-            return -1;}
+            return -1;
+        }
     }
 
     public void changeAddress(String newAdress) {
@@ -111,7 +111,7 @@ public class Parking {
         for (int i = 0; i < garage.length; i++) {
             if (garage[i] != null) System.out.println("Bike with tag :" + garage[i].getTag() + "located at place:" + i);
         }
-        return garage.length-availablePlaces();//returns number of bikes in garage
+        return garage.length - availablePlaces();//returns number of bikes in garage
     }
 
     public int availablePlaces() {
@@ -119,7 +119,7 @@ public class Parking {
         for (Motorcycle moto : garage) {
             if (moto != null) count++;
         }
-        return garage.length-count;
+        return garage.length - count;
     }
 
     public String getAdress() {

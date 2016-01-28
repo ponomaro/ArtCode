@@ -4,8 +4,8 @@ package com.dataart.home.week3.task5;
  * Created by Home on 26.01.2016.
  */
 public class Book {
-    private String author,name;
-    private int available,total,year;
+    private String author, name;
+    private int available, total, year;
 
     public Book(String author, String name, int total, int year) {
         this.author = author;
@@ -39,7 +39,7 @@ public class Book {
         this.available = available;
     }
 
-    public String toString(){
-        return name +" "+ author+" "+ year;
+    public String toString() {
+        return name + " " + author + " " + year;
     }
 }

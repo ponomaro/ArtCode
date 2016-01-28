@@ -1,4 +1,4 @@
-package com.dataart.Class.week2.day2;
+package com.dataart.сlass.week2.day2;
 
 public class Student {
 
@@ -111,11 +111,12 @@ public class Student {
     }
 
     public int study(Subject subject, int hours) {
-        int subjectID=subject.getIdOfSubject();
+        int subjectID = subject.getIdOfSubject();
         for (int i = 1; i < countLessons; i++) {
-            if (study[i][0]== subjectID){
+            if (study[i][0] == subjectID) {
                 study[i][1] += hours;
-            return i;}
+                return i;
+            }
 
         }
         return -1;
@@ -156,17 +157,18 @@ public class Student {
         }
         return -1;
     }
-    public int showAllStudy(){
-        Subject subject=new Subject();
+
+    public int showAllStudy() {
+        Subject subject = new Subject();
         for (int i = 1; i < countLessons; i++) {
-            subject=subject.getSubjectbyid(i);
+            subject = subject.getSubjectbyid(i);
 
             System.out.printf("%s hours completed: %d: planned hours: %d mark %d \n",
-                    subject.getName(),study[i][1],subject.getHoursBySemestr(),study[i][2]);
+                    subject.getName(), study[i][1], subject.getHoursBySemestr(), study[i][2]);
             //System.out.println();
 
         }
-        return countLessons-1;
+        return countLessons - 1;
     }
 
 }

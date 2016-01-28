@@ -1,7 +1,4 @@
-package com.dataart.Home.Week2.Task2;
-import java.math.BigInteger;
-
-import static com.dataart.Home.Week2.Task2.TestMyNumber.*;
+package com.dataart.home.week2.Task2;
 
 /**
  * Created by Oleg on 20.01.2016.

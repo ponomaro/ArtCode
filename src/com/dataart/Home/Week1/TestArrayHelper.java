@@ -1,7 +1,7 @@
-package com.dataart.Home.Week1;
+package com.dataart.home.week1;
 
 import java.util.Scanner;
-import static com.dataart.Home.Week1.ArrayHelper.*;
+import static com.dataart.home.week1.ArrayHelper.*;
 
 /**
  * Created by Oleg on 20.01.2016.

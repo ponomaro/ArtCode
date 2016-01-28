@@ -1,6 +1,4 @@
-package com.dataart.Home.Week2.Task5;
-
-import static com.dataart.Home.Week2.Task5.MyMassiv.*;
+package com.dataart.home.week2.Task5;
 
 /**
  * Created by Oleg on 20.01.2016.

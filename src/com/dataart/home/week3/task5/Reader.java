@@ -8,24 +8,25 @@ import java.util.List;
  */
 public class Reader {
     private String name;
-    private List<Book> books = new ArrayList<Book>();
+    private MyArrayList<Book> books = new MyArrayList<Book>();
 
     public Reader(String name) {
         this.name = name;
     }
 
-    public void addBook(Book book){
+    public void addBook(Book book) {
         books.add(book);
     }
-    public int getBookCount(){
+
+    public int getBookCount() {
         return books.size();
     }
 
-    public String toString(){
+    public String toString() {
         return name;
     }
 
-    public List<Book> getBooks() {
+    public MyArrayList<Book> getBooks() {
         return books;
     }
 }

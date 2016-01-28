@@ -1,4 +1,4 @@
-package com.dataart.Home.Week2.Task4;
+package com.dataart.home.week2.Task4;
 
 
 import java.util.Scanner;

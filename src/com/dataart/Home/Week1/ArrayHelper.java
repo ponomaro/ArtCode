@@ -1,8 +1,6 @@
-package com.dataart.Home.Week1;
+package com.dataart.home.week1;
 
 import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
 
 /**
  * Created by Oleg on 16.01.2016.

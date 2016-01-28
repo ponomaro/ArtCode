@@ -1,4 +1,4 @@
-package com.dataart.Class.week1.day1;
+package com.dataart.сlass.week1.day1;
 
 /**
  * Created by Oleg on 17.01.2016.

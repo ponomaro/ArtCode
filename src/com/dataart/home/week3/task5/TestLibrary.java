@@ -17,40 +17,40 @@ public class TestLibrary {
         Library lib = new Library("LibraryName");
         lib.addReader(reader1);
 
-        int addread=lib.addReader(reader2);
-        System.out.println("addReader: "+(addread==2));
+        int addread = lib.addReader(reader2);
+        System.out.println("addReader: " + (addread == 2));
 
 
-        int listread=lib.listReaders();
-        System.out.println("listReaders: "+(listread==2));
+        int listread = lib.listReaders();
+        System.out.println("listReaders: " + (listread == 2));
 
-        int listaddb=lib.addBook(book1);
+        int listaddb = lib.addBook(book1);
         lib.addBook(book2);
         lib.addBook(book3);
         lib.addBook(book4);
-        System.out.println("addBook: "+(listaddb==1));
+        System.out.println("addBook: " + (listaddb == 1));
 
-        int giveb=lib.giveBook(book2,reader1);
-        System.out.println("giveBook: "+(giveb==1));
+        int giveb = lib.giveBook(book2, reader1);
+        System.out.println("giveBook: " + (giveb == 1));
 
-        int listavbook=lib.listAvailableBooks();
-        System.out.println("listAvailableBooks: "+(listavbook==3));
+        int listavbook = lib.listAvailableBooks();
+        System.out.println("listAvailableBooks: " + (listavbook == 3));
 
-        int listbooksgiven=lib.listBooksGivenToReaders();
-        System.out.println("listBooksGivenToReaders: "+(listbooksgiven==1));
+        int listbooksgiven = lib.listBooksGivenToReaders();
+        System.out.println("listBooksGivenToReaders: " + (listbooksgiven == 1));
 
-        int listreaderbook=lib.listReaderBooks(reader1);
-        System.out.println("listReaderBooks: "+(listreaderbook==1));
+        int listreaderbook = lib.listReaderBooks(reader1);
+        System.out.println("listReaderBooks: " + (listreaderbook == 1));
 
         lib.addReaderToBlackList(reader1);
-        int blockuser=lib.giveBook(book1,reader1);
+        int blockuser = lib.giveBook(book1, reader1);
         System.out.println(blockuser);
-        System.out.println("addReaderToBlackList: "+(blockuser==-1));
+        System.out.println("addReaderToBlackList: " + (blockuser == -1));
 
-        int listBookAuthor=lib.listBooksByAuthor("Author3");
-        System.out.println("listBooksByAuthor: "+(listBookAuthor==2));
+        int listBookAuthor = lib.listBooksByAuthor("Author3");
+        System.out.println("listBooksByAuthor: " + (listBookAuthor == 2));
 
-        int listBookFromYear=lib.listBooksFromYear(2013);
-        System.out.println("listBooksFromYear: "+(listBookFromYear==2));
+        int listBookFromYear = lib.listBooksFromYear(2013);
+        System.out.println("listBooksFromYear: " + (listBookFromYear == 2));
     }
 }

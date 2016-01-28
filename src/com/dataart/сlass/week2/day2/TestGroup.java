@@ -1,4 +1,4 @@
-package com.dataart.Class.week2.day2;
+package com.dataart.сlass.week2.day2;
 
 /**
  * Created by serhii on 23.01.16.
@@ -7,16 +7,16 @@ public class TestGroup {
 
 
     public static void main(String[] args) {
-        MyDate myDate = new MyDate(1990,7,12);
+        MyDate myDate = new MyDate(1990, 7, 12);
 
         Student student1 =
                 new Student("Oleg", myDate,
-                        new Address("UA","Kiev","peremogy sqr", 34),
-                            new Contact("+343434334", null));
+                        new Address("UA", "Kiev", "peremogy sqr", 34),
+                        new Contact("+343434334", null));
         Student student2 =
                 new Student("Oleg", myDate,
-                        new Address("UA","Odessa","derebasovskaya st", 2),
-                            new Contact("+34300000", null));
+                        new Address("UA", "Odessa", "derebasovskaya st", 2),
+                        new Contact("+34300000", null));
 
         Group group = new Group("ACO-11");
 

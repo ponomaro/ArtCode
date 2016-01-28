@@ -1,4 +1,4 @@
-package com.dataart.Home.Week2.Task2;
+package com.dataart.home.week2.Task2;
 
 import java.math.BigInteger;
 

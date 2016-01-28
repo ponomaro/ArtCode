@@ -1,4 +1,4 @@
-package com.dataart.Class.week2.day2;
+package com.dataart.сlass.week2.day2;
 
 /**
  * Created by Oleg on 24.01.2016.
@@ -12,7 +12,6 @@ public class TestSubject {
         Subject1.addSubjectToList();
         Subject2.addSubjectToList();
         Subject3.addSubjectToList();
-
 
 
         Student student1 =
@@ -57,7 +56,6 @@ public class TestSubject {
 
         double averagemark = student1.averageMark();
         System.out.println("averageMark " + (averagemark == 4));
-
 
 
         int getmark = student1.getMarkSubject(Subject2);

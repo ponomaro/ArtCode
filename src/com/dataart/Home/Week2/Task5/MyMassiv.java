@@ -1,4 +1,4 @@
-package com.dataart.Home.Week2.Task5;
+package com.dataart.home.week2.Task5;
 
 
 import java.util.Arrays;

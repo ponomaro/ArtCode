@@ -1,5 +1,4 @@
-package com.dataart.Home.Week2.Task3;
-import static com.dataart.Home.Week2.Task3.MyFractNumber.*;
+package com.dataart.home.week2.Task3;
 
 /**
  * Created by Oleg on 20.01.2016.
