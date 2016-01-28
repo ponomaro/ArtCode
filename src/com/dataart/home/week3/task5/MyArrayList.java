@@ -1,6 +1,6 @@
 package com.dataart.home.week3.task5;
 
-import java.lang.reflect.Type;
+
 import java.util.Arrays;
 import java.util.Iterator;
 
@@ -9,23 +9,23 @@ import java.util.Iterator;
  */
 
 public class MyArrayList<T> implements Iterable<T> {
-    private final int ININTIAL_SIZE=2;
+    private final int ININTIAL_SIZE = 2;
     private Object[] myArrayList = new Object[ININTIAL_SIZE];
-    private int actSize=0;
+    private int actSize = 0;
 
-    public void add(T data){
-        if (actSize==myArrayList.length){
+    public void add(T data) {
+        if (actSize == myArrayList.length) {
             increaseSize();
         }
         myArrayList[actSize++] = data;
     }
 
-    private void increaseSize()throws RuntimeException{
-        myArrayList = Arrays.copyOf(myArrayList, myArrayList.length*2+1);
+    private void increaseSize() throws RuntimeException {
+        myArrayList = Arrays.copyOf(myArrayList, myArrayList.length * 2 + 1);
     }
 
-    public T get(int index) throws RuntimeException{
-        if (index >= actSize){
+    public T get(int index) throws RuntimeException {
+        if (index >= actSize) {
             throw new IndexOutOfBoundsException();
         }
         return (T) myArrayList[index];
@@ -36,10 +36,10 @@ public class MyArrayList<T> implements Iterable<T> {
         return actSize;
     }
 
-    public boolean contains(T type){
-        boolean result=false;
-        for (int i = 0; i <actSize ; i++) {
-            if((myArrayList[i]).equals(type)) result=true;
+    public boolean contains(T type) {
+        boolean result = false;
+        for (int i = 0; i < actSize; i++) {
+            if ((myArrayList[i]).equals(type)) result = true;
         }
         return result;
     }
