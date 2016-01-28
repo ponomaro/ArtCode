@@ -102,7 +102,7 @@ public class Library {
         int sum = 0;
 
         for (Book book : books) {
-            if (book.getYear() <= year) {
+            if (book.getYear() >= year) {
                 System.out.println(book);
                 sum++;
             }

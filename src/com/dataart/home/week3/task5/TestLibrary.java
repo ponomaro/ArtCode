@@ -50,7 +50,7 @@ public class TestLibrary {
         int listBookAuthor = lib.listBooksByAuthor("Author3");
         System.out.println("listBooksByAuthor: " + (listBookAuthor == 2));
 
-        int listBookFromYear = lib.listBooksFromYear(2013);
+        int listBookFromYear = lib.listBooksFromYear(2014);
         System.out.println("listBooksFromYear: " + (listBookFromYear == 2));
     }
 }
