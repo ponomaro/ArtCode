@@ -44,21 +44,21 @@ public class TestNode {
          */
         System.out.println("negative testing _____________________________________________________________________");
         //test node add to head
-        System.out.println("test add to head: " + (addToHead(node1, null)==node1));
+        System.out.println("test add to head: " + (addToHead(node1, null) == node1));
         //array
         Node ar2[] = toArray(null);
         System.out.println("test to array: " + (ar2.length == 0));
         // insert by index
         Node node11 = new Node(11, null);
 
-        System.out.println("test insert by index: " + NodeUtils.toString(head=insertByIndex(11, node11, head)).equals("6; 5; 4; 3; 2; 1"));
+        System.out.println("test insert by index: " + NodeUtils.toString(head = insertByIndex(11, node11, head)).equals("6; 5; 4; 3; 2; 1"));
         // remove
         System.out.println("test remove: " + NodeUtils.toString(remove(15, head)).equals("6; 5; 4; 3; 2; 1"));
 
         // getIndexOf
         System.out.println("test getIndexOf: " + (indexOf(node11, head) == -1));
         // reverse
-        System.out.println("test reverse1: "+(reverse(null)==null));
+        System.out.println("test reverse1: " + (reverse(null) == null));
         System.out.println("test reverse2: " + NodeUtils.toString(head = reverse(head)).equals("1; 2; 3; 4; 5; 6"));
 
     }

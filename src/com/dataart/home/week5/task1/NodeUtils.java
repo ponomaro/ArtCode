@@ -95,7 +95,7 @@ public class NodeUtils {
     static Node revert;
 
     public static Node reverse(Node chain) {
-        if (chain==null||chain.next==null) return chain;
+        if (chain == null || chain.next == null) return chain;
         reverse(chain, chain);
         chain.next = null;
         return revert;

@@ -10,8 +10,8 @@ public class Node {
 
     @Override
     public boolean equals(Object obj) {
-        Node anotherNode= (Node) obj;
-        return (Integer)value==(Integer)anotherNode.value;
+        Node anotherNode = (Node) obj;
+        return (Integer) value == (Integer) anotherNode.value;
     }
 
     public Node(Object value, Node next) {
