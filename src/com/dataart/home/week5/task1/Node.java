@@ -10,8 +10,11 @@ public class Node {
 
     @Override
     public boolean equals(Object obj) {
-        Node anotherNode = (Node) obj;
-        return (Integer) value == (Integer) anotherNode.value;
+        if (obj instanceof Node){
+            return value == ((Node) obj).value;
+
+        }
+        return false;
     }
 
     public Node(Object value, Node next) {
