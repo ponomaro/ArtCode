@@ -12,19 +12,19 @@ public class StringSortTest {
         String[] strmas = {"zoo", "appela", "void", "cron", "appel"};
         String[] test=strmas.clone();
 
-        StringSort.sortStingMasZA(strmas);
+        com.dataart.home.week4.task2.StringSort.sortStingMasZA(strmas);
         System.out.println();
-        StringSort.printMas(strmas);
+        com.dataart.home.week4.task2.StringSort.printMas(strmas);
 
 
-        StringSort.sortStingMasAZ(strmas);
-        StringSort.printMas(strmas);
+        com.dataart.home.week4.task2.StringSort.sortStingMasAZ(strmas);
+        com.dataart.home.week4.task2.StringSort.printMas(strmas);
 
 
         Arrays.sort(test);
 
         System.out.println("____________________________");
-        System.out.println("test sortStingMasAZ: "+StringSort.areMasIdentical(strmas,test));
+        System.out.println("test sortStingMasAZ: "+ com.dataart.home.week4.task2.StringSort.areMasIdentical(strmas,test));
 
     }
 }

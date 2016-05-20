@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by serhii on 07.02.16.
  */
-public class NodeUtils {
+public class NodeUtils  {
     static List<Node> templist = new ArrayList<>();
 
     public static Node addToHead(Node newNode, Node chainHead) {

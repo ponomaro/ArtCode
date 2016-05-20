@@ -61,6 +61,7 @@ public class TestNode {
         System.out.println("test reverse1: " + (reverse(null) == null));
         System.out.println("test reverse2: " + NodeUtils.toString(head = reverse(head)).equals("1; 2; 3; 4; 5; 6"));
 
+
     }
 
 

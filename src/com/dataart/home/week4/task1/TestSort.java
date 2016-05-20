@@ -1,6 +1,7 @@
 package com.dataart.home.week4.task1;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
 import java.util.Random;
 
@@ -41,6 +42,7 @@ public class TestSort {
 
         start = new Date();
         Arrays.sort(test4);
+
         end = new Date();
 
         System.out.println("Native Sort runs " + (end.getTime() - start.getTime()) + " miliseconds for 5000 el");
